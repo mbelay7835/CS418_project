@@ -1,0 +1,14 @@
+footer{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+  /* .footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    background: #f0f0f0;
+    width: 100%;
+  } */
