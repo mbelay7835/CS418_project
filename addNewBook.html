@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/library.css">
+    <title>Virtual Tour page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">The cityLibrary<span class="sup">&reg;</span> ::: a CS418 WebApp
+                    project</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="about.html">About Us</a></li>
+                <li class="active"><a href="virtualTour.html">virtual Tour</a></li>
+                <li class="active"><a href="books.html">Books</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Welcome, Guest</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form>
+        <div class="container">
+
+            <h2 style="color: royalblue;">New Book Form <span id="pbtdisplay" class="btn btn-success"
+                    style="display: none; margin-left: 400px; margin-right: 400px;">Book added</span> </h2>
+
+            <div class="col-md-16 mb-3">
+                <label for="exampl">*required form fields</label><br>
+                <label for="title">*Book Titles</label>
+                <input type="text" class="form-control" id="title" aria-describedby="titleHelp"
+                    placeholder="Enter Titles" required>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="isbn">*ISBN</label>
+                    <input type="isbn" class="form-control" id="isbn" aria-describedby="isbnHelp"
+                        placeholder="Enter isbn" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="Overdue">*Overdue per Pay</label>
+                    <input type="text" class="form-control" id="Overdue" aria-describedby="OverduebnHelp"
+                        placeholder="Enter Overdue " required>
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+
+                    <label for="Publisher">*Publisher</label>
+                    <input type="text" class="form-control" id="publisher" aria-describedby="PublisherbnHelp"
+                        placeholder="Enter Publisher" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="date">*Date Published</label>
+                    <input type="date" class="form-control" id="date" aria-describedby="isbnHelp"
+                        placeholder="Enter Date Published" required>
+                </div>
+            </div>
+            <br>
+            <div>
+                <span style="float:right;">
+                    <div class="btn-group mr-2" role="group" aria-label="Second group">
+
+                        <button type="reset" class="btn btn-success">Reset</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Third group">
+                        <button  type="button" id="save" class="btn btn-primary">Save Book</button>
+                    </div>
+                </span>
+
+            </div>
+
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="container">© 2021 Copyright:
+            <a href="https://msd.miu.edu/"> Masters In Software Development</a>
+            <div> Mequanint.B ::: CS418 WebApp @ February 2021</div>
+        </div>
+    </footer>
+    <!--script must be loading after body, keep script after content-->
+    <script src="js/add.js"></script>
+</body>
+
+</html>
