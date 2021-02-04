@@ -17,7 +17,7 @@ async function fetchDataJSON() {
                     <td>${data[i].overdueFee}</td>
                     <td>${data[i].publisher}</td>
                     <td>${data[i].datePublished}</td>
-                    <td><a  href="editBook.html ?bookId=${data[i].bookId}"  onclick= edditBook(${data[i].bookId})" style="float:right;">Edit</a></td>
+                    <td><a  href="editBook.html ?bookId=${data[i].bookId}"  onclick= updateTable()" style="float:right;">Edit</a></td>
                     <td><a data-toggle="modal" data-bookid="${data[i].bookId}" data-bookisbn="${data[i].isbn}" 
                      data-booktitle="${data[i].title}" href="delete.html" onclick="deletebook(${data[i].bookId})">Delete</a></td>
                   </tr>`
