@@ -5,13 +5,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/library.css">
-    <title>add book</title>
+    <title>Edit Book</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+    <script defer src="js/books.js"></script>
 </head>
 
 <body>
@@ -19,8 +19,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">The cityLibrary<span class="sup">&reg;</span> ::: a CS418 WebApp
-                    project</a>
+                <a class="navbar-brand" href="index.html">The cityLibrary<span class="sup">&reg;</span> ::: a CS418 WebApp project</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="about.html">About Us</a></li>
@@ -35,8 +34,8 @@
     <form>
         <div class="container">
 
-            <h2 style="color: royalblue;">New Book Form <span id="pbtdisplay" class="btn btn-success"
-                    style="display: none; margin-left: 400px; margin-right: 400px;">Book added</span> </h2>
+            <h2 style="color: royalblue;">Edit Book Form <span id="pbtdisplay" class="btn btn-success"
+                    style="display: none; margin-left: 400px; margin-right: 400px;">Book edited</span> </h2>
 
             <div class="col-md-16 mb-3">
                 <label for="exampl">*required form fields</label><br>
@@ -80,7 +79,8 @@
                         <button type="reset" class="btn btn-success">Reset</button>
                     </div>
                     <div class="btn-group" role="group" aria-label="Third group">
-                        <button  type="button" id="save" class="btn btn-primary">Save Book</button>
+                        <input type="hidden" id="bookId">
+                        <button type="button" id="editsave" class="btn btn-primary">Save Book</button>
                     </div>
                 </span>
 
@@ -94,8 +94,8 @@
             <div> Mequanint.B ::: CS418 WebApp @ February 2021</div>
         </div>
     </footer>
-    <!--script must be loading after body, keep script after content-->
-    <script src="js/add.js"></script>
+    
+   
 </body>
 
 </html>

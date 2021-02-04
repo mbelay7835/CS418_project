@@ -35,8 +35,6 @@ async function addBook() {
         alert(err)
     }
 
-
-
 }
 //addBook()
 let saveBook = document.getElementById("save");

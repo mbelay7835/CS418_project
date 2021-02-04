@@ -27,7 +27,7 @@ input:required:valid {
   border-color: rgb(194, 212, 194);
 }
 input:invalid {
-  border-color: red;
+  border-color: rgb(212, 86, 75);
 }
 input:required:focus:valid {
   background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% rgb(201, 218, 201);
